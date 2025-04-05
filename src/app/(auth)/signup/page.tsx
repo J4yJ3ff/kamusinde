@@ -196,12 +196,27 @@
 //   );
 // }
 
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 import React from "react";
 
 const page = () => {
   return (
     <div className="text-2xl font-bold">
       You are not allowed to create an account at the moment!!
+      <br />
+      Please contact the admin for more information.
+      <br />
+      <br />
+      <span className="text-sm text-muted-foreground">
+        This is a demo version of the application. You can only login with the
+        provided credentials.
+      </span>
+      <br />
+      <Button className="mt-4 " asChild>
+        <Link href="/login">Go to Login</Link>
+      </Button>
     </div>
   );
 };
