@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -60,7 +60,8 @@ interface StudentFormProps {
   isEditing?: boolean;
 }
 
-export default function StudentForm({
+// Create a client component that uses router and form hooks
+function StudentFormContent({
   initialData,
   isEditing = false,
 }: StudentFormProps) {
@@ -463,5 +464,42 @@ export default function StudentForm({
         </div>
       </form>
     </Form>
+  );
+}
+
+// Main component with Suspense
+export default function StudentForm({
+  initialData,
+  isEditing = false,
+}: StudentFormProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="space-y-6">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="space-y-4">
+              <div className="h-6 w-48 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="space-y-2">
+                  <div className="h-4 w-24 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
+                  <div className="h-10 w-full bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
+                </div>
+              ))}
+            </div>
+            <div className="space-y-4">
+              <div className="h-6 w-48 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="space-y-2">
+                  <div className="h-4 w-24 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
+                  <div className="h-10 w-full bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      }
+    >
+      <StudentFormContent initialData={initialData} isEditing={isEditing} />
+    </Suspense>
   );
 }

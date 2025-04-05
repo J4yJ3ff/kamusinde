@@ -1,6 +1,7 @@
 // src/app/auth/error/page.tsx
 "use client"; // Needs to access searchParams
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import {
   Card,
@@ -12,7 +13,8 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export default function AuthErrorPage() {
+// Create a client component that uses useSearchParams
+function AuthErrorContent() {
   const searchParams = useSearchParams();
   const error = searchParams?.get("error");
 
@@ -52,31 +54,56 @@ export default function AuthErrorPage() {
   }
 
   return (
+    <Card className="w-full max-w-md shadow-lg">
+      <CardHeader className="space-y-1 text-center bg-destructive text-destructive-foreground p-4 rounded-t-lg">
+        <CardTitle className="text-2xl font-bold">
+          Authentication Failed
+        </CardTitle>
+        <CardDescription className="text-destructive-foreground/90">
+          {errorMessage}
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="p-6 space-y-4">
+        {errorDetails && (
+          <p className="text-center text-muted-foreground">{errorDetails}</p>
+        )}
+        <p className="text-center text-sm text-muted-foreground">
+          Error Code:{" "}
+          <code className="bg-muted px-1 rounded">{error || "N/A"}</code>
+        </p>
+        <div className="flex justify-center">
+          <Link href="/login">
+            <Button variant="outline">Return to Login</Button>
+          </Link>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
+// Main page component with Suspense
+export default function AuthErrorPage() {
+  return (
     <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
-      <Card className="w-full max-w-md shadow-lg">
-        <CardHeader className="space-y-1 text-center bg-destructive text-destructive-foreground p-4 rounded-t-lg">
-          <CardTitle className="text-2xl font-bold">
-            Authentication Failed
-          </CardTitle>
-          <CardDescription className="text-destructive-foreground/90">
-            {errorMessage}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="p-6 space-y-4">
-          {errorDetails && (
-            <p className="text-center text-muted-foreground">{errorDetails}</p>
-          )}
-          <p className="text-center text-sm text-muted-foreground">
-            Error Code:{" "}
-            <code className="bg-muted px-1 rounded">{error || "N/A"}</code>
-          </p>
-          <div className="flex justify-center">
-            <Link href="/login">
-              <Button variant="outline">Return to Login</Button>
-            </Link>
-          </div>
-        </CardContent>
-      </Card>
+      <Suspense
+        fallback={
+          <Card className="w-full max-w-md shadow-lg">
+            <CardHeader className="space-y-1 text-center bg-destructive text-destructive-foreground p-4 rounded-t-lg">
+              <CardTitle className="text-2xl font-bold">
+                Authentication Failed
+              </CardTitle>
+              <CardDescription className="text-destructive-foreground/90">
+                Loading error details...
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="p-6 flex justify-center">
+              <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent"></div>
+            </CardContent>
+          </Card>
+        }
+      >
+        <AuthErrorContent />
+      </Suspense>
     </div>
   );
 }

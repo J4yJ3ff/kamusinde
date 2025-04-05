@@ -2,7 +2,7 @@
 
 import type React from "react";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -90,11 +90,8 @@ const NavGroup = ({
   );
 };
 
-interface DashboardSidebarProps {
-  userRole: UserRole;
-}
-
-export default function DashboardSidebar({ userRole }: DashboardSidebarProps) {
+// Create a client component that uses pathname
+function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
   const pathname = usePathname();
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
@@ -297,5 +294,30 @@ export default function DashboardSidebar({ userRole }: DashboardSidebarProps) {
         />
       )}
     </>
+  );
+}
+
+// Main component with Suspense
+export default function DashboardSidebar({ userRole }: { userRole: UserRole }) {
+  return (
+    <Suspense
+      fallback={
+        <div className="fixed inset-y-0 left-0 z-40 w-64 bg-white shadow-lg dark:bg-gray-800 md:relative">
+          <div className="flex h-16 items-center border-b px-6">
+            <div className="h-6 w-32 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
+          </div>
+          <div className="p-4 space-y-4">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div
+                key={i}
+                className="h-10 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"
+              ></div>
+            ))}
+          </div>
+        </div>
+      }
+    >
+      <DashboardSidebarContent userRole={userRole} />
+    </Suspense>
   );
 }

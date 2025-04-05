@@ -257,7 +257,7 @@ const Header = () => {
           <Link href="/login">
             <Button
               variant="outline"
-              className="text-white border-white hover:bg-white hover:text-[#295E4F]"
+              className="hover:text-white border-white hover:bg-white text-[#295E4F]"
             >
               <LogIn className="mr-2 h-4 w-4" /> Login
             </Button>

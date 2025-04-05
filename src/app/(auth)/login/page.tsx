@@ -1,7 +1,7 @@
 // src/app/(auth)/login/page.tsx
 "use client";
 
-import React, { useState, useTransition } from "react";
+import { useState, useTransition, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -20,7 +20,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Form,
   FormControl,
@@ -39,7 +38,8 @@ const LoginSchema = z.object({
 
 type LoginFormData = z.infer<typeof LoginSchema>;
 
-export default function LoginPage() {
+// Create a client component that uses hooks
+function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const callbackUrl = searchParams?.get("callbackUrl") || "/dashboard"; // Redirect to dashboard or original page
@@ -181,5 +181,26 @@ export default function LoginPage() {
         </form>
       </Form>
     </Card>
+  );
+}
+
+// Main page component with Suspense
+export default function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <Card className="w-full max-w-md shadow-lg">
+          <CardHeader className="space-y-1 text-center">
+            <CardTitle className="text-2xl font-bold">Login</CardTitle>
+            <CardDescription>Loading login form...</CardDescription>
+          </CardHeader>
+          <CardContent className="p-6 flex justify-center">
+            <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent"></div>
+          </CardContent>
+        </Card>
+      }
+    >
+      <LoginForm />
+    </Suspense>
   );
 }

@@ -1,7 +1,7 @@
 // src/app/(auth)/signup/page.tsx
 "use client";
 
-import React, { useState, useTransition } from "react";
+import { useState, useTransition, Suspense } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
@@ -20,7 +20,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Form,
   FormControl,
@@ -43,7 +42,8 @@ const SignUpSchema = z.object({
 
 type SignUpFormData = z.infer<typeof SignUpSchema>;
 
-export default function SignUpPage() {
+// Create a client component that uses hooks
+function SignUpForm() {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
@@ -172,5 +172,26 @@ export default function SignUpPage() {
         </form>
       </Form>
     </Card>
+  );
+}
+
+// Main page component with Suspense
+export default function SignUpPage() {
+  return (
+    <Suspense
+      fallback={
+        <Card className="w-full max-w-md shadow-lg">
+          <CardHeader className="space-y-1 text-center">
+            <CardTitle className="text-2xl font-bold">Sign Up</CardTitle>
+            <CardDescription>Loading signup form...</CardDescription>
+          </CardHeader>
+          <CardContent className="p-6 flex justify-center">
+            <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent"></div>
+          </CardContent>
+        </Card>
+      }
+    >
+      <SignUpForm />
+    </Suspense>
   );
 }

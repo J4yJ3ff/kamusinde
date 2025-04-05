@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
@@ -40,9 +40,8 @@ import {
   Trash2,
   User,
 } from "lucide-react";
-
-import { toast } from "sonner";
 import { deleteStudent } from "@/lib/action/student.actions";
+import { toast } from "sonner";
 
 interface StudentTableProps {
   data: {
@@ -62,10 +61,8 @@ interface StudentTableProps {
   };
 }
 
-export default function StudentTable({
-  data,
-  searchParams,
-}: StudentTableProps) {
+// Create a client component that uses router
+function StudentTableContent({ data, searchParams }: StudentTableProps) {
   const router = useRouter();
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
   const [studentToDelete, setStudentToDelete] = useState<{
@@ -304,5 +301,35 @@ export default function StudentTable({
         </AlertDialogContent>
       </AlertDialog>
     </div>
+  );
+}
+
+// Main component with Suspense
+export default function StudentTable({
+  data,
+  searchParams,
+}: StudentTableProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="space-y-4">
+          <div className="rounded-md border">
+            <div className="h-10 bg-gray-100 dark:bg-gray-800 flex items-center px-4 border-b">
+              <div className="h-4 w-full bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
+            </div>
+            <div className="p-4 space-y-4">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div
+                  key={i}
+                  className="h-16 bg-gray-100 dark:bg-gray-800 rounded animate-pulse"
+                ></div>
+              ))}
+            </div>
+          </div>
+        </div>
+      }
+    >
+      <StudentTableContent data={data} searchParams={searchParams} />
+    </Suspense>
   );
 }
