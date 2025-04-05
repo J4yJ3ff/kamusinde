@@ -1,14 +1,8 @@
 // src/database/models/User.model.ts
+import { UserRole } from "@/types";
 import mongoose, { Schema, type Document, models, type Model } from "mongoose";
 
 // Keep enum definition here or move to a shared types file if preferred
-export enum UserRole {
-  ADMIN = "ADMIN",
-  STAFF = "STAFF",
-  TEACHER = "TEACHER",
-  STUDENT = "STUDENT",
-  PARENT = "PARENT",
-}
 
 export interface IUser extends Document {
   name?: string | null; // Allow null for providers that don't return name

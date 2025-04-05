@@ -10,7 +10,7 @@ import { signIn as nextAuthSignIn } from "next-auth/react"; // Use client-side s
 
 import bcrypt from "bcrypt";
 import { connectToDatabase } from "../mongoose";
-import UserModel, { UserRole } from "@/database/User.model";
+import UserModel, { UserRole } from "@/database/models/User.model";
 import mongoose from "mongoose";
 
 // --- Validation Schemas ---

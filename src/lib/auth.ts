@@ -1,11 +1,11 @@
 // src/lib/auth.ts
-import type { NextAuthOptions, User as NextAuthUser, Session } from "next-auth";
+import type { NextAuthOptions, Session } from "next-auth";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcrypt";
 
 import { connectToDatabase, getClientPromise } from "./mongoose";
-import UserModel, { type IUser, UserRole } from "@/database/User.model";
+import UserModel from "@/database/models/User.model";
 
 // DB connection check (keep as is)
 connectToDatabase().catch((err) => {
@@ -79,7 +79,7 @@ export const authOptions: NextAuthOptions = {
 
   // --- Session Configuration ---
   session: {
-    strategy: "database", // Explicitly "database"
+    strategy: "jwt", // Changed from "database" to "jwt"
     maxAge: 30 * 24 * 60 * 60,
     updateAge: 24 * 60 * 60,
   },
@@ -96,41 +96,30 @@ export const authOptions: NextAuthOptions = {
 
   // --- Callbacks ---
   callbacks: {
-    async session({ session, user, token }) {
-      // `user` object here comes from the MongoDB adapter (`AdapterUser`)
+    async jwt({ token, user }) {
+      console.log("--- JWT Callback ---");
+      if (user) {
+        // This runs only on sign in
+        console.log("JWT: User sign in, adding custom properties to token");
+        token.id = user.id;
+        token.role = user.role;
+      }
+      return token;
+    },
+    async session({ session, token }) {
       console.log("--- Session Callback ---");
-      console.log("Session received:", JSON.stringify(session, null, 2));
-      console.log("Adapter User received:", JSON.stringify(user, null, 2)); // Log the user from adapter
-
-      if (user && session?.user) {
-        try {
-          session.user.id = user.id; // Should already be string from adapter
-          // Safely access role, handle potential type issues
-          const userRole = (user as any)?.role;
-          if (userRole) {
-            session.user.role = userRole;
-          } else {
-            console.warn(
-              "[Session Callback] User object from adapter missing 'role' property."
-            );
-            // Assign a default or handle as needed if role can be missing
-            // session.user.role = UserRole.STUDENT; // Example default
-          }
-          console.log(
-            "Session modified successfully:",
-            JSON.stringify(session, null, 2)
-          );
-        } catch (error) {
-          console.error("[Session Callback] Error modifying session:", error);
-          // Decide if you should return the unmodified session or throw/handle
-        }
+      if (token && session?.user) {
+        session.user.id = token.id as string;
+        session.user.role = token.role as string;
+        console.log(
+          "Session modified successfully:",
+          JSON.stringify(session, null, 2)
+        );
       } else {
         console.warn(
-          "[Session Callback] invoked without user or session.user object."
+          "[Session Callback] invoked without token or session.user object."
         );
       }
-
-      // Ensure a valid session object is always returned
       return session;
     },
 

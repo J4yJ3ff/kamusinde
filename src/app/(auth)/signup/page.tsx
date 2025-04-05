@@ -30,7 +30,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Loader2 } from "lucide-react";
-import { registerUser } from "@/lib/action.ts/auth.actions";
+import { registerUser } from "@/lib/action/auth.actions";
 
 // Validation Schema
 const SignUpSchema = z.object({

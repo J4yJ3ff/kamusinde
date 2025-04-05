@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/sonner";
 import NextAuthProvider from "@/components/providers/NextAuthProvider"; // Import the wrapper
 
 import "./globals.css";
+import { ThemeProvider } from "@/components/providers/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,8 +27,10 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* Use the client component wrapper */}
         <NextAuthProvider>
-          {children}
-          <Toaster position="top-center" richColors />
+          <ThemeProvider defaultTheme="system" storageKey="kbhs-theme">
+            {children}
+            <Toaster position="top-center" richColors />
+          </ThemeProvider>
         </NextAuthProvider>
       </body>
     </html>
