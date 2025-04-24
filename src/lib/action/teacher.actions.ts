@@ -5,10 +5,11 @@ import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { connectToDatabase } from "../mongoose";
 import TeacherModel from "@/database/models/Teacher.model";
-import UserModel, { UserRole } from "@/database/models/User.model";
+import UserModel from "@/database/models/User.model";
 import { getServerSession } from "../auth";
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
+import { UserRole } from "@/types";
 
 // --- Validation Schemas ---
 const TeacherSchema = z.object({

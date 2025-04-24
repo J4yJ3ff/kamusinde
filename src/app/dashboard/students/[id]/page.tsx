@@ -21,13 +21,18 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { getStudentById } from "@/lib/action/student.actions";
+import AcademicTab from "@/components/dashboard/students/tabs/AcademicTab";
+import AttendanceTab from "@/components/dashboard/students/tabs/AttendanceTab";
+import FeesTab from "@/components/dashboard/students/tabs/FeesTab";
+import DisciplinaryTab from "@/components/dashboard/students/tabs/DisciplinaryTab";
 
 export default async function StudentDetailPage({
   params,
 }: {
   params: { id: string };
 }) {
-  const result = await getStudentById(params.id);
+  const param = await params;
+  const result = await getStudentById(param.id);
 
   if (!result.success) {
     notFound();
@@ -46,7 +51,7 @@ export default async function StudentDetailPage({
           </Link>
           <h2 className="text-3xl font-bold tracking-tight">Student Profile</h2>
         </div>
-        <Link href={`/dashboard/students/${params.id}/edit`}>
+        <Link href={`/dashboard/students/${param.id}/edit`}>
           <Button className="bg-[#295E4F] hover:bg-[#1f4a3f]">
             <Pencil className="mr-2 h-4 w-4" />
             Edit Student
@@ -61,7 +66,7 @@ export default async function StudentDetailPage({
             <div className="flex justify-center">
               <Avatar className="h-24 w-24">
                 <AvatarImage
-                  src={undefined}
+                  src={undefined || "/placeholder.svg"}
                   alt={`${student.firstName} ${student.lastName}`}
                 />
                 <AvatarFallback className="bg-[#295E4F] text-white text-xl">
@@ -151,57 +156,20 @@ export default async function StudentDetailPage({
                 <TabsTrigger value="disciplinary">Disciplinary</TabsTrigger>
               </TabsList>
 
-              <TabsContent value="academic" className="space-y-4">
-                <div className="rounded-md bg-gray-50 p-4 dark:bg-gray-800">
-                  <h3 className="text-sm font-medium mb-2">Current Courses</h3>
-                  <p className="text-sm text-muted-foreground">
-                    No courses assigned yet. Courses will appear here once
-                    assigned.
-                  </p>
-                </div>
-
-                <div className="rounded-md bg-gray-50 p-4 dark:bg-gray-800">
-                  <h3 className="text-sm font-medium mb-2">
-                    Academic Performance
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    No grades recorded yet. Performance data will appear here
-                    once grades are entered.
-                  </p>
-                </div>
+              <TabsContent value="academic">
+                <AcademicTab studentId={param.id} />
               </TabsContent>
 
-              <TabsContent value="attendance" className="space-y-4">
-                <div className="rounded-md bg-gray-50 p-4 dark:bg-gray-800">
-                  <h3 className="text-sm font-medium mb-2">
-                    Attendance Summary
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    No attendance records found. Attendance data will appear
-                    here once recorded.
-                  </p>
-                </div>
+              <TabsContent value="attendance">
+                <AttendanceTab studentId={param.id} />
               </TabsContent>
 
-              <TabsContent value="fees" className="space-y-4">
-                <div className="rounded-md bg-gray-50 p-4 dark:bg-gray-800">
-                  <h3 className="text-sm font-medium mb-2">Fee Status</h3>
-                  <p className="text-sm text-muted-foreground">
-                    No fee records found. Fee information will appear here once
-                    recorded.
-                  </p>
-                </div>
+              <TabsContent value="fees">
+                <FeesTab studentId={param.id} />
               </TabsContent>
 
-              <TabsContent value="disciplinary" className="space-y-4">
-                <div className="rounded-md bg-gray-50 p-4 dark:bg-gray-800">
-                  <h3 className="text-sm font-medium mb-2">
-                    Disciplinary Records
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    No disciplinary records found. This is a good thing!
-                  </p>
-                </div>
+              <TabsContent value="disciplinary">
+                <DisciplinaryTab studentId={param.id} />
               </TabsContent>
             </Tabs>
           </CardContent>
