@@ -51,14 +51,16 @@ async function checkAuthorization(
     return { authorized: false, message: "Not authenticated" };
   }
 
-  if (!allowedRoles.includes(session.user.role as UserRole)) {
+  // Use type assertion as a temporary fix for session type issue
+  if (!allowedRoles.includes((session.user as any).role as UserRole)) {
     return {
       authorized: false,
       message: "Not authorized to perform this action",
     };
   }
 
-  return { authorized: true, userId: session.user.id };
+  // Use type assertion as a temporary fix for session type issue
+  return { authorized: true, userId: (session.user as any).id };
 }
 
 // --- Create Student ---
@@ -278,13 +280,13 @@ export async function getStudentById(id: string): Promise<ActionResult> {
       .select("-password")
       .lean();
 
+    // Explicitly serialize the combined data to ensure plain objects
+    const plainData = JSON.parse(JSON.stringify({ ...student, user }));
+
     return {
       success: true,
       message: "Student retrieved successfully",
-      data: {
-        ...student,
-        user,
-      },
+      data: plainData,
     };
   } catch (error) {
     console.error("Get Student Error:", error);

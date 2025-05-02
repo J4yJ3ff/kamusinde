@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import type React from "react";
+import type React from "react"
 
-import { useState, Suspense } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
-import { UserRole } from "@/types"; // Import from types file instead of database model
+import { useState, Suspense } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { cn } from "@/lib/utils"
+import { UserRole } from "@/types" // Import from types file instead of database model
 import {
   ChevronDown,
   ChevronRight,
@@ -16,58 +16,48 @@ import {
   BookOpen,
   Calendar,
   ClipboardList,
-  CreditCard,
   BarChart2,
   Settings,
   Menu,
   X,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
+  School,
+  FileText,
+  UserCheck,
+  DollarSign,
+} from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 interface NavItemProps {
-  href: string;
-  icon: React.ElementType;
-  label: string;
-  active?: boolean;
-  onClick?: () => void;
+  href: string
+  icon: React.ElementType
+  label: string
+  active?: boolean
+  onClick?: () => void
 }
 
-const NavItem = ({
-  href,
-  icon: Icon,
-  label,
-  active,
-  onClick,
-}: NavItemProps) => (
+const NavItem = ({ href, icon: Icon, label, active, onClick }: NavItemProps) => (
   <Link
     href={href}
     className={cn(
       "flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-all hover:bg-gray-100 dark:hover:bg-gray-800",
-      active
-        ? "bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-50"
-        : "text-gray-500 dark:text-gray-400"
+      active ? "bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-50" : "text-gray-500 dark:text-gray-400",
     )}
     onClick={onClick}
   >
     <Icon className="h-4 w-4" />
     <span>{label}</span>
   </Link>
-);
+)
 
 interface NavGroupProps {
-  label: string;
-  icon: React.ElementType;
-  children: React.ReactNode;
-  defaultOpen?: boolean;
+  label: string
+  icon: React.ElementType
+  children: React.ReactNode
+  defaultOpen?: boolean
 }
 
-const NavGroup = ({
-  label,
-  icon: Icon,
-  children,
-  defaultOpen = false,
-}: NavGroupProps) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+const NavGroup = ({ label, icon: Icon, children, defaultOpen = false }: NavGroupProps) => {
+  const [isOpen, setIsOpen] = useState(defaultOpen)
 
   return (
     <div className="space-y-1">
@@ -79,35 +69,27 @@ const NavGroup = ({
           <Icon className="h-4 w-4" />
           <span>{label}</span>
         </div>
-        {isOpen ? (
-          <ChevronDown className="h-4 w-4" />
-        ) : (
-          <ChevronRight className="h-4 w-4" />
-        )}
+        {isOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
       </button>
       {isOpen && <div className="pl-6 space-y-1">{children}</div>}
     </div>
-  );
-};
+  )
+}
 
 // Create a client component that uses pathname
 function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
-  const pathname = usePathname();
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const pathname = usePathname()
+  const [isMobileOpen, setIsMobileOpen] = useState(false)
 
   // Define navigation items based on user role
-  const canAccessStudents = [
-    UserRole.ADMIN,
-    UserRole.STAFF,
-    UserRole.TEACHER,
-  ].includes(userRole);
-  const canAccessTeachers = [UserRole.ADMIN, UserRole.STAFF].includes(userRole);
-  const canAccessFinance = [UserRole.ADMIN, UserRole.STAFF].includes(userRole);
-  const isAdmin = userRole === UserRole.ADMIN;
+  const canAccessStudents = [UserRole.ADMIN, UserRole.STAFF, UserRole.TEACHER].includes(userRole)
+  const canAccessTeachers = [UserRole.ADMIN, UserRole.STAFF].includes(userRole)
+  const canAccessFinance = [UserRole.ADMIN, UserRole.STAFF].includes(userRole)
+  const isAdmin = userRole === UserRole.ADMIN
 
   const closeMobileMenu = () => {
-    setIsMobileOpen(false);
-  };
+    setIsMobileOpen(false)
+  }
 
   return (
     <>
@@ -126,26 +108,18 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
       <div
         className={cn(
           "fixed inset-y-0 left-0 z-40 w-64 transform bg-white shadow-lg transition-transform duration-200 ease-in-out dark:bg-gray-800 md:relative md:translate-x-0",
-          isMobileOpen ? "translate-x-0" : "-translate-x-full"
+          isMobileOpen ? "translate-x-0" : "-translate-x-full",
         )}
       >
         {/* Mobile Close Button */}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="absolute top-4 right-4 md:hidden"
-          onClick={closeMobileMenu}
-        >
+        <Button variant="ghost" size="icon" className="absolute top-4 right-4 md:hidden" onClick={closeMobileMenu}>
           <X className="h-6 w-6" />
           <span className="sr-only">Close Menu</span>
         </Button>
 
         {/* Logo */}
         <div className="flex h-16 items-center border-b px-6">
-          <Link
-            href="/dashboard"
-            className="flex items-center gap-2 font-bold text-xl text-[#295E4F]"
-          >
+          <Link href="/dashboard" className="flex items-center gap-2 font-bold text-xl text-[#295E4F]">
             KBHS Admin
           </Link>
         </div>
@@ -161,11 +135,7 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
           />
 
           {canAccessStudents && (
-            <NavGroup
-              label="Students"
-              icon={Users}
-              defaultOpen={pathname.includes("/dashboard/students")}
-            >
+            <NavGroup label="Students" icon={Users} defaultOpen={pathname.includes("/dashboard/students")}>
               <NavItem
                 href="/dashboard/students"
                 icon={Users}
@@ -182,7 +152,7 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
               />
               <NavItem
                 href="/dashboard/attendance"
-                icon={ClipboardList}
+                icon={UserCheck}
                 label="Attendance"
                 active={pathname.includes("/dashboard/attendance")}
                 onClick={closeMobileMenu}
@@ -191,11 +161,7 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
           )}
 
           {canAccessTeachers && (
-            <NavGroup
-              label="Teachers"
-              icon={GraduationCap}
-              defaultOpen={pathname.includes("/dashboard/teachers")}
-            >
+            <NavGroup label="Teachers" icon={GraduationCap} defaultOpen={pathname.includes("/dashboard/teachers")}>
               <NavItem
                 href="/dashboard/teachers"
                 icon={GraduationCap}
@@ -213,11 +179,7 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
             </NavGroup>
           )}
 
-          <NavGroup
-            label="Academics"
-            icon={BookOpen}
-            defaultOpen={pathname.includes("/dashboard/academics")}
-          >
+          <NavGroup label="Academics" icon={BookOpen} defaultOpen={pathname.includes("/dashboard/academics")}>
             <NavItem
               href="/dashboard/courses"
               icon={BookOpen}
@@ -227,21 +189,21 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
             />
             <NavItem
               href="/dashboard/classes"
-              icon={Users}
+              icon={School}
               label="Classes"
               active={pathname.includes("/dashboard/classes")}
               onClick={closeMobileMenu}
             />
             <NavItem
               href="/dashboard/exams"
-              icon={ClipboardList}
+              icon={FileText}
               label="Exams"
               active={pathname.includes("/dashboard/exams")}
               onClick={closeMobileMenu}
             />
             <NavItem
               href="/dashboard/grades"
-              icon={BarChart2}
+              icon={ClipboardList}
               label="Grades"
               active={pathname.includes("/dashboard/grades")}
               onClick={closeMobileMenu}
@@ -251,7 +213,7 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
           {canAccessFinance && (
             <NavItem
               href="/dashboard/fees"
-              icon={CreditCard}
+              icon={DollarSign}
               label="Fee Management"
               active={pathname.includes("/dashboard/fees")}
               onClick={closeMobileMenu}
@@ -287,14 +249,9 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
       </div>
 
       {/* Overlay for mobile */}
-      {isMobileOpen && (
-        <div
-          className="fixed inset-0 z-30 bg-black/50 md:hidden"
-          onClick={closeMobileMenu}
-        />
-      )}
+      {isMobileOpen && <div className="fixed inset-0 z-30 bg-black/50 md:hidden" onClick={closeMobileMenu} />}
     </>
-  );
+  )
 }
 
 // Main component with Suspense
@@ -308,10 +265,7 @@ export default function DashboardSidebar({ userRole }: { userRole: UserRole }) {
           </div>
           <div className="p-4 space-y-4">
             {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div
-                key={i}
-                className="h-10 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"
-              ></div>
+              <div key={i} className="h-10 bg-gray-200 dark:bg-gray-700 rounded animate-pulse"></div>
             ))}
           </div>
         </div>
@@ -319,5 +273,5 @@ export default function DashboardSidebar({ userRole }: { userRole: UserRole }) {
     >
       <DashboardSidebarContent userRole={userRole} />
     </Suspense>
-  );
+  )
 }
