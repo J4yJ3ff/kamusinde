@@ -37,7 +37,7 @@ const CourseSchema: Schema<ICourse> = new Schema(
 );
 
 // Indexes
-CourseSchema.index({ courseCode: 1 });
+
 CourseSchema.index({ name: 1 });
 CourseSchema.index({ department: 1 });
 

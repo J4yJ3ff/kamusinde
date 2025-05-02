@@ -47,7 +47,7 @@ const TeacherSchema: Schema<ITeacher> = new Schema(
 );
 
 // Indexes
-TeacherSchema.index({ staffId: 1 });
+
 TeacherSchema.index({ lastName: 1, firstName: 1 });
 
 const TeacherModel: Model<ITeacher> =
