@@ -1,0 +1,145 @@
+"filename", "language", "TypeScript", "JavaScript", "JSON", "Markdown", "TypeScript JSX", "JSON with Comments", "CSS", "comment", "blank", "total"
+"c:\Users\J4Y\Desktop\kamusinde\README.md", "Markdown", 0, 0, 0, 23, 0, 0, 0, 0, 14, 37
+"c:\Users\J4Y\Desktop\kamusinde\components.json", "JSON", 0, 0, 21, 0, 0, 0, 0, 0, 0, 21
+"c:\Users\J4Y\Desktop\kamusinde\next.config.ts", "TypeScript", 10, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"c:\Users\J4Y\Desktop\kamusinde\package-lock.json", "JSON", 0, 0, 5379, 0, 0, 0, 0, 0, 1, 5380
+"c:\Users\J4Y\Desktop\kamusinde\package.json", "JSON", 0, 0, 58, 0, 0, 0, 0, 0, 1, 59
+"c:\Users\J4Y\Desktop\kamusinde\postcss.config.mjs", "JavaScript", 0, 4, 0, 0, 0, 0, 0, 0, 2, 6
+"c:\Users\J4Y\Desktop\kamusinde\src\app\(auth)\auth\error\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 98, 0, 0, 5, 7, 110
+"c:\Users\J4Y\Desktop\kamusinde\src\app\(auth)\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 12, 0, 0, 1, 2, 15
+"c:\Users\J4Y\Desktop\kamusinde\src\app\(auth)\login\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 177, 0, 0, 19, 11, 207
+"c:\Users\J4Y\Desktop\kamusinde\src\app\(auth)\signup\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 179, 0, 0, 31, 15, 225
+"c:\Users\J4Y\Desktop\kamusinde\src\app\(root)\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 16, 0, 0, 1, 2, 19
+"c:\Users\J4Y\Desktop\kamusinde\src\app\(root)\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 103, 0, 0, 11, 9, 123
+"c:\Users\J4Y\Desktop\kamusinde\src\app\api\auth\[...nextauth]\route.ts", "TypeScript", 4, 0, 0, 0, 0, 0, 0, 1, 3, 8
+"c:\Users\J4Y\Desktop\kamusinde\src\app\api\classes\[id]\courses\route.ts", "TypeScript", 24, 0, 0, 0, 0, 0, 0, 0, 5, 29
+"c:\Users\J4Y\Desktop\kamusinde\src\app\api\classes\[id]\route.ts", "TypeScript", 47, 0, 0, 0, 0, 0, 0, 4, 7, 58
+"c:\Users\J4Y\Desktop\kamusinde\src\app\api\classes\[id]\students\route.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 6, 42
+"c:\Users\J4Y\Desktop\kamusinde\src\app\api\classes\route.ts", "TypeScript", 35, 0, 0, 0, 0, 0, 0, 0, 6, 41
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\attendance\[studentId]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 203, 0, 0, 3, 28, 234
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\attendance\loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 46, 0, 0, 0, 4, 50
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\attendance\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 78, 0, 0, 2, 15, 95
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\[id]\courses\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 54, 0, 0, 3, 7, 64
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\[id]\edit\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 40, 0, 0, 2, 7, 49
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 262, 0, 0, 0, 11, 273
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\[id]\students\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 61, 0, 0, 2, 7, 70
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 75, 0, 0, 0, 4, 79
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\new\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 18, 0, 0, 1, 5, 24
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 46, 0, 0, 4, 9, 59
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\[id]\edit\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 49, 0, 0, 1, 7, 57
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 210, 0, 0, 3, 17, 230
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\new\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 38, 0, 0, 1, 3, 42
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 152, 0, 0, 5, 12, 169
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\[id]\edit\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 21, 0, 0, 0, 5, 26
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 176, 0, 0, 0, 19, 195
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\[id]\results\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 205, 0, 0, 0, 18, 223
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 32, 0, 0, 0, 3, 35
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\new\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 13, 0, 0, 0, 3, 16
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 71, 0, 0, 0, 9, 80
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 28, 0, 0, 6, 6, 40
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 166, 0, 0, 6, 18, 190
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\[id]\edit\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 50, 0, 0, 1, 7, 58
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 141, 0, 0, 2, 16, 159
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\new\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 38, 0, 0, 1, 3, 42
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 111, 0, 0, 6, 10, 127
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\[id]\edit\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 49, 0, 0, 1, 7, 57
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\[id]\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 197, 0, 0, 3, 15, 215
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 3, 0, 0, 0, 1, 4
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\new\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 38, 0, 0, 1, 3, 42
+"c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\page.tsx", "TypeScript JSX", 0, 0, 0, 0, 108, 0, 0, 6, 10, 124
+"c:\Users\J4Y\Desktop\kamusinde\src\app\globals.css", "CSS", 0, 0, 0, 0, 0, 0, 117, 0, 6, 123
+"c:\Users\J4Y\Desktop\kamusinde\src\app\layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 29, 0, 0, 5, 5, 39
+"c:\Users\J4Y\Desktop\kamusinde\src\components\AlumniEvents.tsx", "TypeScript JSX", 0, 0, 0, 0, 73, 0, 0, 10, 5, 88
+"c:\Users\J4Y\Desktop\kamusinde\src\components\FaqSection.tsx", "TypeScript JSX", 0, 0, 0, 0, 109, 0, 0, 1, 5, 115
+"c:\Users\J4Y\Desktop\kamusinde\src\components\Footer.tsx", "TypeScript JSX", 0, 0, 0, 0, 57, 0, 0, 3, 3, 63
+"c:\Users\J4Y\Desktop\kamusinde\src\components\Header.tsx", "TypeScript JSX", 0, 0, 0, 0, 239, 0, 0, 21, 12, 272
+"c:\Users\J4Y\Desktop\kamusinde\src\components\NewsCard.tsx", "TypeScript JSX", 0, 0, 0, 0, 115, 0, 0, 1, 5, 121
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\DashboardHeader.tsx", "TypeScript JSX", 0, 0, 0, 0, 135, 0, 0, 6, 11, 152
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\DashboardSidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 245, 0, 0, 9, 24, 278
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\RecentActivityList.tsx", "TypeScript JSX", 0, 0, 0, 0, 93, 0, 0, 1, 3, 97
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\StatsCard.tsx", "TypeScript JSX", 0, 0, 0, 0, 56, 0, 0, 0, 3, 59
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\UpcomingEventsList.tsx", "TypeScript JSX", 0, 0, 0, 0, 87, 0, 0, 1, 4, 92
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\attendance\AttendanceForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 185, 0, 0, 0, 18, 203
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\attendance\AttendanceStats.tsx", "TypeScript JSX", 0, 0, 0, 0, 306, 0, 0, 0, 22, 328
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\attendance\AttendanceTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 258, 0, 0, 2, 13, 273
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\attendance\ClassAttendanceForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 498, 0, 0, 11, 43, 552
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\classes\ClassForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 394, 0, 0, 15, 34, 443
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\classes\ClassTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 309, 0, 0, 5, 21, 335
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\classes\CourseAssignment.tsx", "TypeScript JSX", 0, 0, 0, 0, 192, 0, 0, 6, 20, 218
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\classes\StudentAssignment.tsx", "TypeScript JSX", 0, 0, 0, 0, 196, 0, 0, 5, 20, 221
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\courses\CourseForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 539, 0, 0, 12, 32, 583
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\courses\CourseTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 315, 0, 0, 5, 15, 335
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 358, 0, 0, 2, 32, 392
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamResultForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 156, 0, 0, 0, 18, 174
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamResultsStats.tsx", "TypeScript JSX", 0, 0, 0, 0, 136, 0, 0, 0, 10, 146
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamResultsTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 193, 0, 0, 0, 9, 202
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 184, 0, 0, 0, 7, 191
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\StudentExamResults.tsx", "TypeScript JSX", 0, 0, 0, 0, 163, 0, 0, 0, 12, 175
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\StudentForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 467, 0, 0, 11, 28, 506
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\StudentTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 316, 0, 0, 5, 15, 336
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\tabs\AcademicTab.tsx", "TypeScript JSX", 0, 0, 0, 0, 333, 0, 0, 7, 20, 360
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\tabs\AttendanceTab.tsx", "TypeScript JSX", 0, 0, 0, 0, 421, 0, 0, 6, 23, 450
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\tabs\DisciplinaryTab.tsx", "TypeScript JSX", 0, 0, 0, 0, 558, 0, 0, 7, 22, 587
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\tabs\FeesTab.tsx", "TypeScript JSX", 0, 0, 0, 0, 614, 0, 0, 8, 24, 646
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\teachers\TeacherForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 550, 0, 0, 11, 35, 596
+"c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\teachers\TeacherTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 330, 0, 0, 5, 15, 350
+"c:\Users\J4Y\Desktop\kamusinde\src\components\login-btn.tsx", "TypeScript JSX", 0, 0, 0, 0, 18, 0, 0, 0, 2, 20
+"c:\Users\J4Y\Desktop\kamusinde\src\components\providers\NextAuthProvider.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 2, 4, 15
+"c:\Users\J4Y\Desktop\kamusinde\src\components\providers\ThemeProvider.tsx", "TypeScript JSX", 0, 0, 0, 0, 70, 0, 0, 0, 19, 89
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\accordion.tsx", "TypeScript JSX", 0, 0, 0, 0, 59, 0, 0, 0, 8, 67
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\alert-dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 143, 0, 0, 0, 15, 158
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\alert.tsx", "TypeScript JSX", 0, 0, 0, 0, 60, 0, 0, 0, 7, 67
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\avatar.tsx", "TypeScript JSX", 0, 0, 0, 0, 47, 0, 0, 0, 7, 54
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\badge.tsx", "TypeScript JSX", 0, 0, 0, 0, 41, 0, 0, 0, 6, 47
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\button.tsx", "TypeScript JSX", 0, 0, 0, 0, 54, 0, 0, 0, 6, 60
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\calendar.tsx", "TypeScript JSX", 0, 0, 0, 0, 71, 0, 0, 0, 5, 76
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\card.tsx", "TypeScript JSX", 0, 0, 0, 0, 83, 0, 0, 0, 10, 93
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\checkbox.tsx", "TypeScript JSX", 0, 0, 0, 0, 28, 0, 0, 0, 5, 33
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\command.tsx", "TypeScript JSX", 0, 0, 0, 0, 165, 0, 0, 0, 13, 178
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 122, 0, 0, 0, 14, 136
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\dropdown-menu.tsx", "TypeScript JSX", 0, 0, 0, 0, 239, 0, 0, 0, 19, 258
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\form.tsx", "TypeScript JSX", 0, 0, 0, 0, 143, 0, 0, 0, 25, 168
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\input.tsx", "TypeScript JSX", 0, 0, 0, 0, 18, 0, 0, 0, 4, 22
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\label.tsx", "TypeScript JSX", 0, 0, 0, 0, 20, 0, 0, 0, 5, 25
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\popover.tsx", "TypeScript JSX", 0, 0, 0, 0, 41, 0, 0, 0, 8, 49
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\progress.tsx", "TypeScript JSX", 0, 0, 0, 0, 27, 0, 0, 0, 5, 32
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\scroll-area.tsx", "TypeScript JSX", 0, 0, 0, 0, 53, 0, 0, 0, 6, 59
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\select.tsx", "TypeScript JSX", 0, 0, 0, 0, 172, 0, 0, 0, 14, 186
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\separator.tsx", "TypeScript JSX", 0, 0, 0, 0, 24, 0, 0, 0, 5, 29
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\sheet.tsx", "TypeScript JSX", 0, 0, 0, 0, 126, 0, 0, 0, 14, 140
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\skeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 11, 0, 0, 0, 3, 14
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\sonner.tsx", "TypeScript JSX", 0, 0, 0, 0, 21, 0, 0, 0, 5, 26
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\table.tsx", "TypeScript JSX", 0, 0, 0, 0, 105, 0, 0, 0, 12, 117
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\tabs.tsx", "TypeScript JSX", 0, 0, 0, 0, 59, 0, 0, 0, 8, 67
+"c:\Users\J4Y\Desktop\kamusinde\src\components\ui\textarea.tsx", "TypeScript JSX", 0, 0, 0, 0, 15, 0, 0, 0, 4, 19
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Account.model.ts", "TypeScript", 37, 0, 0, 0, 0, 0, 0, 7, 6, 50
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Attendance.model.ts", "TypeScript", 38, 0, 0, 0, 0, 0, 0, 2, 5, 45
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Class.model.ts", "TypeScript", 50, 0, 0, 0, 0, 0, 0, 2, 5, 57
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Course.model.ts", "TypeScript", 39, 0, 0, 0, 0, 0, 0, 2, 6, 47
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\DisciplinaryRecord.model.ts", "TypeScript", 51, 0, 0, 0, 0, 0, 0, 2, 5, 58
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Event.model.ts", "TypeScript", 57, 0, 0, 0, 0, 0, 0, 2, 5, 64
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Exam.model.ts", "TypeScript", 88, 0, 0, 0, 0, 0, 0, 0, 4, 92
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\ExamResult.model.ts", "TypeScript", 53, 0, 0, 0, 0, 0, 0, 1, 5, 59
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Fee.model.ts", "TypeScript", 56, 0, 0, 0, 0, 0, 0, 2, 5, 63
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Grade.model.ts", "TypeScript", 47, 0, 0, 0, 0, 0, 0, 2, 5, 54
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Student.model.ts", "TypeScript", 47, 0, 0, 0, 0, 0, 0, 9, 7, 63
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\Teacher.model.ts", "TypeScript", 48, 0, 0, 0, 0, 0, 0, 2, 6, 56
+"c:\Users\J4Y\Desktop\kamusinde\src\database\models\User.model.ts", "TypeScript", 37, 0, 0, 0, 0, 0, 0, 8, 7, 52
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\attendance.actions.ts", "TypeScript", 611, 0, 0, 0, 0, 0, 0, 63, 101, 775
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\auth.actions.ts", "TypeScript", 100, 0, 0, 0, 0, 0, 0, 57, 23, 180
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\class.actions.ts", "TypeScript", 330, 0, 0, 0, 0, 0, 0, 59, 79, 468
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\course.actions.ts", "TypeScript", 331, 0, 0, 0, 0, 0, 0, 27, 51, 409
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\disciplinary.actions.ts", "TypeScript", 198, 0, 0, 0, 0, 0, 0, 20, 32, 250
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\exam.actions.ts", "TypeScript", 389, 0, 0, 0, 0, 0, 0, 29, 78, 496
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\fee.actions.ts", "TypeScript", 225, 0, 0, 0, 0, 0, 0, 23, 37, 285
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\grade.actions.ts", "TypeScript", 183, 0, 0, 0, 0, 0, 0, 17, 33, 233
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\student.actions.ts", "TypeScript", 376, 0, 0, 0, 0, 0, 0, 36, 61, 473
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\action\teacher.actions.ts", "TypeScript", 367, 0, 0, 0, 0, 0, 0, 33, 59, 459
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\auth.ts", "TypeScript", 125, 0, 0, 0, 0, 0, 0, 26, 17, 168
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\mongoose.ts", "TypeScript", 90, 0, 0, 0, 0, 0, 0, 39, 23, 152
+"c:\Users\J4Y\Desktop\kamusinde\src\lib\utils.ts", "TypeScript", 5, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"c:\Users\J4Y\Desktop\kamusinde\src\types\index.ts", "TypeScript", 14, 0, 0, 0, 0, 0, 0, 2, 3, 19
+"c:\Users\J4Y\Desktop\kamusinde\tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 34, 0, 0, 1, 35
+"Total", "-", 4148, 4, 5458, 23, 14623, 34, 117, 788, 1908, 27103

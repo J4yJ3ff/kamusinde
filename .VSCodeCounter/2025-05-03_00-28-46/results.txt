@@ -1,0 +1,251 @@
+Date : 2025-05-03 00:28:46
+Directory : c:\Users\J4Y\Desktop\kamusinde
+Total : 143 files,  24407 codes, 788 comments, 1908 blanks, all 27103 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| TypeScript JSX     |        103 |     14,623 |        311 |      1,183 |     16,117 |
+| JSON               |          3 |      5,458 |          0 |          2 |      5,460 |
+| TypeScript         |         33 |      4,148 |        477 |        700 |      5,325 |
+| CSS                |          1 |        117 |          0 |          6 |        123 |
+| JSON with Comments |          1 |         34 |          0 |          1 |         35 |
+| Markdown           |          1 |         23 |          0 |         14 |         37 |
+| JavaScript         |          1 |          4 |          0 |          2 |          6 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                       | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                          |        143 |     24,407 |        788 |      1,908 |     27,103 |
+| . (Files)                                                                                  |          7 |      5,529 |          0 |         22 |      5,551 |
+| src                                                                                        |        136 |     18,878 |        788 |      1,886 |     21,552 |
+| src\app                                                                                    |         46 |      3,662 |        138 |        375 |      4,175 |
+| src\app (Files)                                                                            |          2 |        146 |          5 |         11 |        162 |
+| src\app\(auth)                                                                             |          4 |        466 |         56 |         35 |        557 |
+| src\app\(auth) (Files)                                                                     |          1 |         12 |          1 |          2 |         15 |
+| src\app\(auth)\auth                                                                        |          1 |         98 |          5 |          7 |        110 |
+| src\app\(auth)\auth\error                                                                  |          1 |         98 |          5 |          7 |        110 |
+| src\app\(auth)\login                                                                       |          1 |        177 |         19 |         11 |        207 |
+| src\app\(auth)\signup                                                                      |          1 |        179 |         31 |         15 |        225 |
+| src\app\(root)                                                                             |          2 |        119 |         12 |         11 |        142 |
+| src\app\api                                                                                |          5 |        146 |          5 |         27 |        178 |
+| src\app\api\auth                                                                           |          1 |          4 |          1 |          3 |          8 |
+| src\app\api\auth\[...nextauth]                                                             |          1 |          4 |          1 |          3 |          8 |
+| src\app\api\classes                                                                        |          4 |        142 |          4 |         24 |        170 |
+| src\app\api\classes (Files)                                                                |          1 |         35 |          0 |          6 |         41 |
+| src\app\api\classes\[id]                                                                   |          3 |        107 |          4 |         18 |        129 |
+| src\app\api\classes\[id] (Files)                                                           |          1 |         47 |          4 |          7 |         58 |
+| src\app\api\classes\[id]\courses                                                           |          1 |         24 |          0 |          5 |         29 |
+| src\app\api\classes\[id]\students                                                          |          1 |         36 |          0 |          6 |         42 |
+| src\app\dashboard                                                                          |         33 |      2,785 |         60 |        291 |      3,136 |
+| src\app\dashboard (Files)                                                                  |          2 |        194 |         12 |         24 |        230 |
+| src\app\dashboard\attendance                                                               |          3 |        327 |          5 |         47 |        379 |
+| src\app\dashboard\attendance (Files)                                                       |          2 |        124 |          2 |         19 |        145 |
+| src\app\dashboard\attendance\[studentId]                                                   |          1 |        203 |          3 |         28 |        234 |
+| src\app\dashboard\classes                                                                  |          7 |        556 |         12 |         50 |        618 |
+| src\app\dashboard\classes (Files)                                                          |          2 |        121 |          4 |         13 |        138 |
+| src\app\dashboard\classes\[id]                                                             |          4 |        417 |          7 |         32 |        456 |
+| src\app\dashboard\classes\[id] (Files)                                                     |          1 |        262 |          0 |         11 |        273 |
+| src\app\dashboard\classes\[id]\courses                                                     |          1 |         54 |          3 |          7 |         64 |
+| src\app\dashboard\classes\[id]\edit                                                        |          1 |         40 |          2 |          7 |         49 |
+| src\app\dashboard\classes\[id]\students                                                    |          1 |         61 |          2 |          7 |         70 |
+| src\app\dashboard\classes\new                                                              |          1 |         18 |          1 |          5 |         24 |
+| src\app\dashboard\courses                                                                  |          5 |        452 |         10 |         40 |        502 |
+| src\app\dashboard\courses (Files)                                                          |          2 |        155 |          5 |         13 |        173 |
+| src\app\dashboard\courses\[id]                                                             |          2 |        259 |          4 |         24 |        287 |
+| src\app\dashboard\courses\[id] (Files)                                                     |          1 |        210 |          3 |         17 |        230 |
+| src\app\dashboard\courses\[id]\edit                                                        |          1 |         49 |          1 |          7 |         57 |
+| src\app\dashboard\courses\new                                                              |          1 |         38 |          1 |          3 |         42 |
+| src\app\dashboard\exams                                                                    |          6 |        518 |          0 |         57 |        575 |
+| src\app\dashboard\exams (Files)                                                            |          2 |        103 |          0 |         12 |        115 |
+| src\app\dashboard\exams\[id]                                                               |          3 |        402 |          0 |         42 |        444 |
+| src\app\dashboard\exams\[id] (Files)                                                       |          1 |        176 |          0 |         19 |        195 |
+| src\app\dashboard\exams\[id]\edit                                                          |          1 |         21 |          0 |          5 |         26 |
+| src\app\dashboard\exams\[id]\results                                                       |          1 |        205 |          0 |         18 |        223 |
+| src\app\dashboard\exams\new                                                                |          1 |         13 |          0 |          3 |         16 |
+| src\app\dashboard\students                                                                 |          5 |        343 |         10 |         37 |        390 |
+| src\app\dashboard\students (Files)                                                         |          2 |        114 |          6 |         11 |        131 |
+| src\app\dashboard\students\[id]                                                            |          2 |        191 |          3 |         23 |        217 |
+| src\app\dashboard\students\[id] (Files)                                                    |          1 |        141 |          2 |         16 |        159 |
+| src\app\dashboard\students\[id]\edit                                                       |          1 |         50 |          1 |          7 |         58 |
+| src\app\dashboard\students\new                                                             |          1 |         38 |          1 |          3 |         42 |
+| src\app\dashboard\teachers                                                                 |          5 |        395 |         11 |         36 |        442 |
+| src\app\dashboard\teachers (Files)                                                         |          2 |        111 |          6 |         11 |        128 |
+| src\app\dashboard\teachers\[id]                                                            |          2 |        246 |          4 |         22 |        272 |
+| src\app\dashboard\teachers\[id] (Files)                                                    |          1 |        197 |          3 |         15 |        215 |
+| src\app\dashboard\teachers\[id]\edit                                                       |          1 |         49 |          1 |          7 |         57 |
+| src\app\dashboard\teachers\new                                                             |          1 |         38 |          1 |          3 |         42 |
+| src\components                                                                             |         63 |     11,224 |        178 |        841 |     12,243 |
+| src\components (Files)                                                                     |          6 |        611 |         36 |         32 |        679 |
+| src\components\dashboard                                                                   |         29 |      8,587 |        140 |        553 |      9,280 |
+| src\components\dashboard (Files)                                                           |          5 |        616 |         17 |         45 |        678 |
+| src\components\dashboard\attendance                                                        |          4 |      1,247 |         13 |         96 |      1,356 |
+| src\components\dashboard\classes                                                           |          4 |      1,091 |         31 |         95 |      1,217 |
+| src\components\dashboard\courses                                                           |          2 |        854 |         17 |         47 |        918 |
+| src\components\dashboard\exams                                                             |          6 |      1,190 |          2 |         88 |      1,280 |
+| src\components\dashboard\students                                                          |          6 |      2,709 |         44 |        132 |      2,885 |
+| src\components\dashboard\students (Files)                                                  |          2 |        783 |         16 |         43 |        842 |
+| src\components\dashboard\students\tabs                                                     |          4 |      1,926 |         28 |         89 |      2,043 |
+| src\components\dashboard\teachers                                                          |          2 |        880 |         16 |         50 |        946 |
+| src\components\providers                                                                   |          2 |         79 |          2 |         23 |        104 |
+| src\components\ui                                                                          |         26 |      1,947 |          0 |        233 |      2,180 |
+| src\database                                                                               |         13 |        648 |         41 |         71 |        760 |
+| src\database\models                                                                        |         13 |        648 |         41 |         71 |        760 |
+| src\lib                                                                                    |         13 |      3,330 |        429 |        596 |      4,355 |
+| src\lib (Files)                                                                            |          3 |        220 |         65 |         42 |        327 |
+| src\lib\action                                                                             |         10 |      3,110 |        364 |        554 |      4,028 |
+| src\types                                                                                  |          1 |         14 |          2 |          3 |         19 |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                   | language           | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\J4Y\Desktop\kamusinde\README.md                                                   | Markdown           |         23 |          0 |         14 |         37 |
+| c:\Users\J4Y\Desktop\kamusinde\components.json                                             | JSON               |         21 |          0 |          0 |         21 |
+| c:\Users\J4Y\Desktop\kamusinde\next.config.ts                                              | TypeScript         |         10 |          0 |          3 |         13 |
+| c:\Users\J4Y\Desktop\kamusinde\package-lock.json                                           | JSON               |      5,379 |          0 |          1 |      5,380 |
+| c:\Users\J4Y\Desktop\kamusinde\package.json                                                | JSON               |         58 |          0 |          1 |         59 |
+| c:\Users\J4Y\Desktop\kamusinde\postcss.config.mjs                                          | JavaScript         |          4 |          0 |          2 |          6 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\(auth)\auth\error\page.tsx                          | TypeScript JSX     |         98 |          5 |          7 |        110 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\(auth)\layout.tsx                                   | TypeScript JSX     |         12 |          1 |          2 |         15 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\(auth)\login\page.tsx                               | TypeScript JSX     |        177 |         19 |         11 |        207 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\(auth)\signup\page.tsx                              | TypeScript JSX     |        179 |         31 |         15 |        225 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\(root)\layout.tsx                                   | TypeScript JSX     |         16 |          1 |          2 |         19 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\(root)\page.tsx                                     | TypeScript JSX     |        103 |         11 |          9 |        123 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\api\auth\[...nextauth]\route.ts                     | TypeScript         |          4 |          1 |          3 |          8 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\api\classes\[id]\courses\route.ts                   | TypeScript         |         24 |          0 |          5 |         29 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\api\classes\[id]\route.ts                           | TypeScript         |         47 |          4 |          7 |         58 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\api\classes\[id]\students\route.ts                  | TypeScript         |         36 |          0 |          6 |         42 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\api\classes\route.ts                                | TypeScript         |         35 |          0 |          6 |         41 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\attendance\[studentId]\page.tsx           | TypeScript JSX     |        203 |          3 |         28 |        234 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\attendance\loading.tsx                    | TypeScript JSX     |         46 |          0 |          4 |         50 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\attendance\page.tsx                       | TypeScript JSX     |         78 |          2 |         15 |         95 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\[id]\courses\page.tsx             | TypeScript JSX     |         54 |          3 |          7 |         64 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\[id]\edit\page.tsx                | TypeScript JSX     |         40 |          2 |          7 |         49 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\[id]\page.tsx                     | TypeScript JSX     |        262 |          0 |         11 |        273 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\[id]\students\page.tsx            | TypeScript JSX     |         61 |          2 |          7 |         70 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\loading.tsx                       | TypeScript JSX     |         75 |          0 |          4 |         79 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\new\page.tsx                      | TypeScript JSX     |         18 |          1 |          5 |         24 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\classes\page.tsx                          | TypeScript JSX     |         46 |          4 |          9 |         59 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\[id]\edit\page.tsx                | TypeScript JSX     |         49 |          1 |          7 |         57 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\[id]\page.tsx                     | TypeScript JSX     |        210 |          3 |         17 |        230 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\loading.tsx                       | TypeScript JSX     |          3 |          0 |          1 |          4 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\new\page.tsx                      | TypeScript JSX     |         38 |          1 |          3 |         42 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\courses\page.tsx                          | TypeScript JSX     |        152 |          5 |         12 |        169 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\[id]\edit\page.tsx                  | TypeScript JSX     |         21 |          0 |          5 |         26 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\[id]\page.tsx                       | TypeScript JSX     |        176 |          0 |         19 |        195 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\[id]\results\page.tsx               | TypeScript JSX     |        205 |          0 |         18 |        223 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\loading.tsx                         | TypeScript JSX     |         32 |          0 |          3 |         35 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\new\page.tsx                        | TypeScript JSX     |         13 |          0 |          3 |         16 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\exams\page.tsx                            | TypeScript JSX     |         71 |          0 |          9 |         80 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\layout.tsx                                | TypeScript JSX     |         28 |          6 |          6 |         40 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\page.tsx                                  | TypeScript JSX     |        166 |          6 |         18 |        190 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\[id]\edit\page.tsx               | TypeScript JSX     |         50 |          1 |          7 |         58 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\[id]\page.tsx                    | TypeScript JSX     |        141 |          2 |         16 |        159 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\loading.tsx                      | TypeScript JSX     |          3 |          0 |          1 |          4 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\new\page.tsx                     | TypeScript JSX     |         38 |          1 |          3 |         42 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\students\page.tsx                         | TypeScript JSX     |        111 |          6 |         10 |        127 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\[id]\edit\page.tsx               | TypeScript JSX     |         49 |          1 |          7 |         57 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\[id]\page.tsx                    | TypeScript JSX     |        197 |          3 |         15 |        215 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\loading.tsx                      | TypeScript JSX     |          3 |          0 |          1 |          4 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\new\page.tsx                     | TypeScript JSX     |         38 |          1 |          3 |         42 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\dashboard\teachers\page.tsx                         | TypeScript JSX     |        108 |          6 |         10 |        124 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\globals.css                                         | CSS                |        117 |          0 |          6 |        123 |
+| c:\Users\J4Y\Desktop\kamusinde\src\app\layout.tsx                                          | TypeScript JSX     |         29 |          5 |          5 |         39 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\AlumniEvents.tsx                             | TypeScript JSX     |         73 |         10 |          5 |         88 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\FaqSection.tsx                               | TypeScript JSX     |        109 |          1 |          5 |        115 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\Footer.tsx                                   | TypeScript JSX     |         57 |          3 |          3 |         63 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\Header.tsx                                   | TypeScript JSX     |        239 |         21 |         12 |        272 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\NewsCard.tsx                                 | TypeScript JSX     |        115 |          1 |          5 |        121 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\DashboardHeader.tsx                | TypeScript JSX     |        135 |          6 |         11 |        152 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\DashboardSidebar.tsx               | TypeScript JSX     |        245 |          9 |         24 |        278 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\RecentActivityList.tsx             | TypeScript JSX     |         93 |          1 |          3 |         97 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\StatsCard.tsx                      | TypeScript JSX     |         56 |          0 |          3 |         59 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\UpcomingEventsList.tsx             | TypeScript JSX     |         87 |          1 |          4 |         92 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\attendance\AttendanceForm.tsx      | TypeScript JSX     |        185 |          0 |         18 |        203 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\attendance\AttendanceStats.tsx     | TypeScript JSX     |        306 |          0 |         22 |        328 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\attendance\AttendanceTable.tsx     | TypeScript JSX     |        258 |          2 |         13 |        273 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\attendance\ClassAttendanceForm.tsx | TypeScript JSX     |        498 |         11 |         43 |        552 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\classes\ClassForm.tsx              | TypeScript JSX     |        394 |         15 |         34 |        443 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\classes\ClassTable.tsx             | TypeScript JSX     |        309 |          5 |         21 |        335 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\classes\CourseAssignment.tsx       | TypeScript JSX     |        192 |          6 |         20 |        218 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\classes\StudentAssignment.tsx      | TypeScript JSX     |        196 |          5 |         20 |        221 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\courses\CourseForm.tsx             | TypeScript JSX     |        539 |         12 |         32 |        583 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\courses\CourseTable.tsx            | TypeScript JSX     |        315 |          5 |         15 |        335 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamForm.tsx                 | TypeScript JSX     |        358 |          2 |         32 |        392 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamResultForm.tsx           | TypeScript JSX     |        156 |          0 |         18 |        174 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamResultsStats.tsx         | TypeScript JSX     |        136 |          0 |         10 |        146 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamResultsTable.tsx         | TypeScript JSX     |        193 |          0 |          9 |        202 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\ExamTable.tsx                | TypeScript JSX     |        184 |          0 |          7 |        191 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\exams\StudentExamResults.tsx       | TypeScript JSX     |        163 |          0 |         12 |        175 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\StudentForm.tsx           | TypeScript JSX     |        467 |         11 |         28 |        506 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\StudentTable.tsx          | TypeScript JSX     |        316 |          5 |         15 |        336 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\tabs\AcademicTab.tsx      | TypeScript JSX     |        333 |          7 |         20 |        360 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\tabs\AttendanceTab.tsx    | TypeScript JSX     |        421 |          6 |         23 |        450 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\tabs\DisciplinaryTab.tsx  | TypeScript JSX     |        558 |          7 |         22 |        587 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\students\tabs\FeesTab.tsx          | TypeScript JSX     |        614 |          8 |         24 |        646 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\teachers\TeacherForm.tsx           | TypeScript JSX     |        550 |         11 |         35 |        596 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\dashboard\teachers\TeacherTable.tsx          | TypeScript JSX     |        330 |          5 |         15 |        350 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\login-btn.tsx                                | TypeScript JSX     |         18 |          0 |          2 |         20 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\providers\NextAuthProvider.tsx               | TypeScript JSX     |          9 |          2 |          4 |         15 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\providers\ThemeProvider.tsx                  | TypeScript JSX     |         70 |          0 |         19 |         89 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\accordion.tsx                             | TypeScript JSX     |         59 |          0 |          8 |         67 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\alert-dialog.tsx                          | TypeScript JSX     |        143 |          0 |         15 |        158 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\alert.tsx                                 | TypeScript JSX     |         60 |          0 |          7 |         67 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\avatar.tsx                                | TypeScript JSX     |         47 |          0 |          7 |         54 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\badge.tsx                                 | TypeScript JSX     |         41 |          0 |          6 |         47 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\button.tsx                                | TypeScript JSX     |         54 |          0 |          6 |         60 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\calendar.tsx                              | TypeScript JSX     |         71 |          0 |          5 |         76 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\card.tsx                                  | TypeScript JSX     |         83 |          0 |         10 |         93 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\checkbox.tsx                              | TypeScript JSX     |         28 |          0 |          5 |         33 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\command.tsx                               | TypeScript JSX     |        165 |          0 |         13 |        178 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\dialog.tsx                                | TypeScript JSX     |        122 |          0 |         14 |        136 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\dropdown-menu.tsx                         | TypeScript JSX     |        239 |          0 |         19 |        258 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\form.tsx                                  | TypeScript JSX     |        143 |          0 |         25 |        168 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\input.tsx                                 | TypeScript JSX     |         18 |          0 |          4 |         22 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\label.tsx                                 | TypeScript JSX     |         20 |          0 |          5 |         25 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\popover.tsx                               | TypeScript JSX     |         41 |          0 |          8 |         49 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\progress.tsx                              | TypeScript JSX     |         27 |          0 |          5 |         32 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\scroll-area.tsx                           | TypeScript JSX     |         53 |          0 |          6 |         59 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\select.tsx                                | TypeScript JSX     |        172 |          0 |         14 |        186 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\separator.tsx                             | TypeScript JSX     |         24 |          0 |          5 |         29 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\sheet.tsx                                 | TypeScript JSX     |        126 |          0 |         14 |        140 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\skeleton.tsx                              | TypeScript JSX     |         11 |          0 |          3 |         14 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\sonner.tsx                                | TypeScript JSX     |         21 |          0 |          5 |         26 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\table.tsx                                 | TypeScript JSX     |        105 |          0 |         12 |        117 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\tabs.tsx                                  | TypeScript JSX     |         59 |          0 |          8 |         67 |
+| c:\Users\J4Y\Desktop\kamusinde\src\components\ui\textarea.tsx                              | TypeScript JSX     |         15 |          0 |          4 |         19 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Account.model.ts                        | TypeScript         |         37 |          7 |          6 |         50 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Attendance.model.ts                     | TypeScript         |         38 |          2 |          5 |         45 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Class.model.ts                          | TypeScript         |         50 |          2 |          5 |         57 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Course.model.ts                         | TypeScript         |         39 |          2 |          6 |         47 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\DisciplinaryRecord.model.ts             | TypeScript         |         51 |          2 |          5 |         58 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Event.model.ts                          | TypeScript         |         57 |          2 |          5 |         64 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Exam.model.ts                           | TypeScript         |         88 |          0 |          4 |         92 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\ExamResult.model.ts                     | TypeScript         |         53 |          1 |          5 |         59 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Fee.model.ts                            | TypeScript         |         56 |          2 |          5 |         63 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Grade.model.ts                          | TypeScript         |         47 |          2 |          5 |         54 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Student.model.ts                        | TypeScript         |         47 |          9 |          7 |         63 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\Teacher.model.ts                        | TypeScript         |         48 |          2 |          6 |         56 |
+| c:\Users\J4Y\Desktop\kamusinde\src\database\models\User.model.ts                           | TypeScript         |         37 |          8 |          7 |         52 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\attendance.actions.ts                        | TypeScript         |        611 |         63 |        101 |        775 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\auth.actions.ts                              | TypeScript         |        100 |         57 |         23 |        180 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\class.actions.ts                             | TypeScript         |        330 |         59 |         79 |        468 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\course.actions.ts                            | TypeScript         |        331 |         27 |         51 |        409 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\disciplinary.actions.ts                      | TypeScript         |        198 |         20 |         32 |        250 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\exam.actions.ts                              | TypeScript         |        389 |         29 |         78 |        496 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\fee.actions.ts                               | TypeScript         |        225 |         23 |         37 |        285 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\grade.actions.ts                             | TypeScript         |        183 |         17 |         33 |        233 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\student.actions.ts                           | TypeScript         |        376 |         36 |         61 |        473 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\action\teacher.actions.ts                           | TypeScript         |        367 |         33 |         59 |        459 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\auth.ts                                             | TypeScript         |        125 |         26 |         17 |        168 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\mongoose.ts                                         | TypeScript         |         90 |         39 |         23 |        152 |
+| c:\Users\J4Y\Desktop\kamusinde\src\lib\utils.ts                                            | TypeScript         |          5 |          0 |          2 |          7 |
+| c:\Users\J4Y\Desktop\kamusinde\src\types\index.ts                                          | TypeScript         |         14 |          2 |          3 |         19 |
+| c:\Users\J4Y\Desktop\kamusinde\tsconfig.json                                               | JSON with Comments |         34 |          0 |          1 |         35 |
+| Total                                                                                      |                    |     24,407 |        788 |      1,908 |     27,103 |
++--------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
