@@ -170,7 +170,7 @@ export default function AttendanceStats({ classes = [], defaultClassId }: Attend
                   )}
                 </Button>
               </PopoverTrigger>
-              <PopoverContent className="w-auto p-0" align="start">
+              {/* <PopoverContent className="w-auto p-0" align="start">
                 <Calendar
                   initialFocus
                   mode="range"
@@ -179,7 +179,7 @@ export default function AttendanceStats({ classes = [], defaultClassId }: Attend
                   onSelect={setDateRange as any}
                   numberOfMonths={2}
                 />
-              </PopoverContent>
+              </PopoverContent> */}
             </Popover>
           </div>
         )}

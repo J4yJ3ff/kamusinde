@@ -163,13 +163,13 @@ export default async function StudentAttendancePage({ params }: StudentAttendanc
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="list">
-            <TabsList className="mb-4">
+            {/* <TabsList className="mb-4">
               <TabsTrigger value="list">List View</TabsTrigger>
               <TabsTrigger value="calendar">
                 <Calendar className="mr-2 h-4 w-4" />
                 Calendar View
               </TabsTrigger>
-            </TabsList>
+            </TabsList> */}
 
             <TabsContent value="list">
               <AttendanceTable records={records} />

@@ -6,7 +6,7 @@ import { format } from "date-fns"
 import { CalendarIcon, Check, X, Clock, AlertCircle, Search } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
+// import { Calendar } from "@/components/ui/calendar"
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -246,7 +246,7 @@ export default function ClassAttendanceForm({
                         </Button>
                       </FormControl>
                     </PopoverTrigger>
-                    <PopoverContent className="w-auto p-0" align="start">
+                    {/* <PopoverContent className="w-auto p-0" align="start">
                       <Calendar
                         mode="single"
                         selected={field.value}
@@ -254,7 +254,7 @@ export default function ClassAttendanceForm({
                         disabled={(date) => date > new Date() || date < new Date("1900-01-01")}
                         initialFocus
                       />
-                    </PopoverContent>
+                    </PopoverContent> */}
                   </Popover>
                   <FormMessage />
                 </FormItem>
