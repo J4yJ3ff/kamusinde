@@ -1,4 +1,4 @@
-// Create src/lib/feature-flags.ts
+// src/lib/feature-flags.ts
 export const ENABLED_FEATURES = {
     FEES_MANAGEMENT: false,
     CALENDAR: false,
@@ -12,8 +12,9 @@ export const ENABLED_FEATURES = {
     EXAMS: true,
     ATTENDANCE: true,
     GRADES: true,
-  };
+  }
   
   export function isFeatureEnabled(featureName: keyof typeof ENABLED_FEATURES): boolean {
-    return ENABLED_FEATURES[featureName];
+    return ENABLED_FEATURES[featureName]
   }
+  

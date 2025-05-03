@@ -7,6 +7,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { UserRole } from "@/types" // Import from types file instead of database model
+import { isFeatureEnabled } from "@/lib/feature-flags"
 import {
   ChevronDown,
   ChevronRight,
@@ -33,19 +34,23 @@ interface NavItemProps {
   label: string
   active?: boolean
   onClick?: () => void
+  disabled?: boolean
 }
 
-const NavItem = ({ href, icon: Icon, label, active, onClick }: NavItemProps) => (
+const NavItem = ({ href, icon: Icon, label, active, onClick, disabled }: NavItemProps) => (
   <Link
     href={href}
     className={cn(
-      "flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-all hover:bg-gray-100 dark:hover:bg-gray-800",
+      "flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-all",
       active ? "bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-50" : "text-gray-500 dark:text-gray-400",
+      disabled ? "opacity-50 cursor-not-allowed pointer-events-none" : "hover:bg-gray-100 dark:hover:bg-gray-800",
     )}
     onClick={onClick}
+    aria-disabled={disabled}
   >
     <Icon className="h-4 w-4" />
     <span>{label}</span>
+    {disabled && <span className="ml-auto text-xs bg-gray-200 dark:bg-gray-700 px-1.5 py-0.5 rounded">Soon</span>}
   </Link>
 )
 
@@ -86,6 +91,11 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
   const canAccessTeachers = [UserRole.ADMIN, UserRole.STAFF].includes(userRole)
   const canAccessFinance = [UserRole.ADMIN, UserRole.STAFF].includes(userRole)
   const isAdmin = userRole === UserRole.ADMIN
+
+  // Check feature flags
+  const isFeesEnabled = isFeatureEnabled("FEES_MANAGEMENT")
+  const isCalendarEnabled = isFeatureEnabled("CALENDAR")
+  const isReportsEnabled = isFeatureEnabled("REPORTS")
 
   const closeMobileMenu = () => {
     setIsMobileOpen(false)
@@ -217,6 +227,7 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
               label="Fee Management"
               active={pathname.includes("/dashboard/fees")}
               onClick={closeMobileMenu}
+              disabled={!isFeesEnabled}
             />
           )}
 
@@ -226,6 +237,7 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
             label="Calendar"
             active={pathname.includes("/dashboard/calendar")}
             onClick={closeMobileMenu}
+            disabled={!isCalendarEnabled}
           />
 
           <NavItem
@@ -234,6 +246,7 @@ function DashboardSidebarContent({ userRole }: { userRole: UserRole }) {
             label="Reports"
             active={pathname.includes("/dashboard/reports")}
             onClick={closeMobileMenu}
+            disabled={!isReportsEnabled}
           />
 
           {isAdmin && (
