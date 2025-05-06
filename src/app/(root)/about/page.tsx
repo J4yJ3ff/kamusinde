@@ -8,10 +8,10 @@ import { Separator } from "@/components/ui/separator"
 export default function About() {
   // Use state to store image URLs
   const [images, setImages] = useState({
-    about: "/placeholder.svg?height=800&width=1200",
-    headteacher: "/placeholder.svg?height=600&width=400",
-    deputy: "/placeholder.svg?height=600&width=400",
-    history: "/placeholder.svg?height=400&width=1200",
+    about: "/assets/about.jpg",
+    headteacher: "/assets/headteacher.jpg",
+    deputy: "/assets/deputy.jpg",
+    history: "/assets/history.jpg",
   })
 
   // In a real implementation, you would use actual image imports
