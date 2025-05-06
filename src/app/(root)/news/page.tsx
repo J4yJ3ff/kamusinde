@@ -42,7 +42,7 @@ export default function News() {
   useEffect(() => {
     // In production, replace with actual image paths
     setImages({
-      about: "/assets/aboutImage.jpg",
+      about: "/assets/aboutimage.jpg",
       art: "/assets/art.jpg",
     })
   }, [])
@@ -103,7 +103,7 @@ export default function News() {
   const studentNews = [
     {
       id: 1,
-      img: "/assets/",
+      img: "/assets/students1.jpg",
       title: "Debate Team Success",
       content:
         "The KBHS debate team won first place in a regional competition, showcasing outstanding argumentation and teamwork.",
@@ -111,7 +111,7 @@ export default function News() {
     },
     {
       id: 2,
-      img: "/assets/",
+      img: "/assets/students2.jpg",
       title: "Student Leadership Conference",
       content:
         "Our student leaders participated in a national leadership conference, bringing back valuable insights for our school community.",
@@ -119,7 +119,7 @@ export default function News() {
     },
     {
       id: 3,
-      img: "/assets/",
+      img: "/assets/student3.jpg",
       title: "Art Exhibition Success",
       content:
         "Student artists showcased their talents at the annual art exhibition, impressing visitors with their creativity and technical skills.",

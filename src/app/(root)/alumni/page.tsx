@@ -15,7 +15,7 @@ const AlumniEvents = () => {
           {[1, 2, 3].map((item) => (
             <Card key={item} className="overflow-hidden">
               <div className="relative h-48 w-full">
-                <Image src="/placeholder.svg?height=300&width=500" alt="Event" fill className="object-cover" />
+                <Image src="/assets/event1.jpg" alt="Event" fill className="object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Annual Alumni Reunion</h3>
@@ -47,7 +47,7 @@ const Cards = () => {
           {[1, 2, 3].map((item) => (
             <Card key={item} className="overflow-hidden">
               <div className="relative h-64 w-full">
-                <Image src="/images/alumni1.jpg" alt="Alumni" fill className="object-cover" />
+                <Image src="/assets/alumni1.jpg" alt="Alumni" fill className="object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Dr. James Mwangi</h3>

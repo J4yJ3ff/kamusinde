@@ -2,7 +2,7 @@ import Image from "next/image"; // Use Next.js Image
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"; // Use Shadcn Card
 
 // Assuming Alumni2 image is in public/assets
-const alumniImage = "/assets/Alumni2.jpg";
+const alumniImage = "/assets/alumni2.jpg";
 
 const events = [
   {

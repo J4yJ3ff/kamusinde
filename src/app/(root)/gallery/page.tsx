@@ -29,22 +29,22 @@ export default function Gallery() {
   useEffect(() => {
     // In production, replace with actual image paths
     setImages({
-      banner: "/assets/IMG_031.jpg",
-      image1: "/assets/IMG_001.jpg",
-      image2: "/assets/IMG_002.jpg",
-      image3: "/assets/IMG_003.jpg",
-      image4: "/assets/IMG_029.jpg",
-      image5: "/assets/IMG_005.jpg",
-      image6: "/assets/IMG_006.jpg",
-      image7: "/assets/IMG_007.jpg",
-      image8: "/assets/IMG_008.jpg",
-      image9: "/assets/IMG_021.jpg",
-      image10: "/assets/IMG_018.jpg",
-      image11: "/assets/IMG_012.jpg",
-      image12: "/assets/IMG_013.jpg",
-      image13: "/assets/IMG_014.jpg",
-      image14: "/assets/IMG_034.jpg",
-      image15: "/assets/IMG_025.jpg",
+      banner: "/assets/img_031.jpg",
+      image1: "/assets/img_001.jpg",
+      image2: "/assets/img_002.jpg",
+      image3: "/assets/img_003.jpg",
+      image4: "/assets/img_029.jpg",
+      image5: "/assets/img_005.jpg",
+      image6: "/assets/img_006.jpg",
+      image7: "/assets/img_007.jpg",
+      image8: "/assets/img_008.jpg",
+      image9: "/assets/img_021.jpg",
+      image10: "/assets/img_018.jpg",
+      image11: "/assets/img_012.jpg",
+      image12: "/assets/img_013.jpg",
+      image13: "/assets/img_014.jpg",
+      image14: "/assets/img_034.jpg",
+      image15: "/assets/img_025.jpg",
     })
   }, [])
 

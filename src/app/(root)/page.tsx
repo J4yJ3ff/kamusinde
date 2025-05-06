@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 import AlumniEvents from "@/components/AlumniEvents"; // Assuming path is correct
 
 // Assume images are in public/assets
-const heroImage = "/assets/Image.JPG"; // Make sure this path is correct relative to `public`
-const aboutImage = "/assets/Aboutus.JPG"; // Make sure this path is correct relative to `public`
+const heroImage = "/assets/image.jpg"; // Make sure this path is correct relative to `public`
+const aboutImage = "/assets/aboutus.jpg"; // Make sure this path is correct relative to `public`
 
 const HomePage = () => {
   return (

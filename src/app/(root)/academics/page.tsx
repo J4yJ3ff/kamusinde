@@ -9,21 +9,11 @@ export default function Academics() {
     banner3: "/assets/academics3.jpg",
   })
 
-  // In a real implementation, you would use actual image imports
-  useEffect(() => {
-    // In production, replace with actual image paths
-    setImages({
-      banner: "/assets/academics-header.jpg",
-      banner2: "/assets/academics2.jpg",
-      banner3: "/assets/academics3.jpg",
-    })
-  }, [])
-
   return (
     <div className="font-sans bg-gray-100 min-h-screen">
       {/* Banner */}
       <section className="relative bg-cover bg-top h-[55vh]" style={{ backgroundImage: `url(${images.banner})` }}>
-        <div className="absolute bg-black bg-opacity-40 inset-0"></div>
+        <div className="absolute bg-black bg-opacity-30 inset-0"></div>
         <div className="flex items-end justify-start h-full pb-8">
           <h2 className="text-4xl font-bold text-white ml-8 md:ml-28 z-10">ACADEMICS</h2>
         </div>
@@ -77,7 +67,7 @@ export default function Academics() {
         className="relative w-full bg-cover bg-center h-72"
         style={{ backgroundImage: `url(${images.banner2})` }}
       >
-        <div className="absolute bg-black bg-opacity-40 inset-0"></div>
+        <div className="absolute bg-black bg-opacity-30 inset-0"></div>
       </section>
 
       <main className="container mx-auto px-4 py-12">
@@ -125,7 +115,7 @@ export default function Academics() {
         className="relative w-full bg-cover bg-center h-72"
         style={{ backgroundImage: `url(${images.banner3})` }}
       >
-        <div className="absolute bg-black bg-opacity-40 inset-0"></div>
+        <div className="absolute bg-black bg-opacity-30 inset-0"></div>
       </section>
 
       <main className="container mx-auto px-4 py-12">
