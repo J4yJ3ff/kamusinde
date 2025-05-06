@@ -20,7 +20,7 @@ const newsItems = [
       "Our students brought home top honors from the National Science and Engineering Fair, showcasing innovative projects in renewable energy and environmental conservation.",
     category: "Achievements",
     date: "June 15, 2023",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/assets/games.jpg",
     slug: "students-excel-science-competition",
   },
   {
@@ -30,7 +30,7 @@ const newsItems = [
       "KBHS is proud to announce the opening of our state-of-the-art computer laboratory, equipped with the latest technology to enhance digital literacy among our students.",
     category: "Facilities",
     date: "May 28, 2023",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/assets/lab.jpg",
     slug: "new-computer-lab-inaugurated",
   },
   {
@@ -40,7 +40,7 @@ const newsItems = [
       "The annual KBHS Sports Day was a resounding success, with students competing in various athletic events and showcasing their sporting talents and team spirit.",
     category: "Events",
     date: "April 10, 2023",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/assets/art.jpg",
     slug: "annual-sports-day-excellence",
   },
 ];
