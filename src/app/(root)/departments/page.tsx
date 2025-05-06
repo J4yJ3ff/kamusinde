@@ -20,7 +20,7 @@ export default function Departments() {
   // In a real implementation, you would use actual image imports
   useEffect(() => {
     // In production, replace with actual image path
-    setDepartmentImage("/images/departments.jpg")
+    setDepartmentImage("/assets/departments.jpg")
   }, [])
 
   return (
