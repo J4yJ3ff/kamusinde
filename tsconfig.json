@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "src/app/api/auth/[...nextauth]",
     "src/lib/action"
-  ],
+, "src/app/(root)/admissions"  ],
   "exclude": ["node_modules"]
 }
