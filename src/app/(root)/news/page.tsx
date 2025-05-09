@@ -1,23 +1,28 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-import { Calendar } from "lucide-react"
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { Calendar } from "lucide-react";
 
 interface NewsCardProps {
-  title: string
-  content: string
-  date: string
-  img: string
+  title: string;
+  content: string;
+  date: string;
+  img: string;
 }
 
 const NewsCard = ({ title, content, date, img }: NewsCardProps) => {
   return (
     <Card className="overflow-hidden h-full shadow-md hover:shadow-lg transition-shadow">
       <div className="h-[200px] relative">
-        <Image src={img || "/placeholder.svg"} alt={title} fill className="object-cover object-top" />
+        <Image
+          src={img || "/placeholder.svg"}
+          alt={title}
+          fill
+          className="object-cover object-top"
+        />
       </div>
       <CardContent className="p-0 bg-gray-50 h-[calc(100%-200px)]">
         <h3 className="text-[#295E4F] p-4 pt-2 font-semibold">{title}</h3>
@@ -28,15 +33,15 @@ const NewsCard = ({ title, content, date, img }: NewsCardProps) => {
         </div>
       </CardContent>
     </Card>
-  )
-}
+  );
+};
 
 export default function News() {
   // Use state to store image URLs
   const [images, setImages] = useState({
     about: "/placeholder.svg?height=800&width=1200",
     art: "/placeholder.svg?height=400&width=600",
-  })
+  });
 
   // In a real implementation, you would use actual image imports
   useEffect(() => {
@@ -44,8 +49,8 @@ export default function News() {
     setImages({
       about: "/assets/aboutimage.jpg",
       art: "/assets/art.jpg",
-    })
-  }, [])
+    });
+  }, []);
 
   const latestNews = [
     {
@@ -72,14 +77,15 @@ export default function News() {
         "Congratulations to Ms. Wanjiku for receiving the Excellence in Teaching Award. Her dedication to innovative teaching methods has inspired countless students.",
       date: "2 weeks ago",
     },
-  ]
+  ];
 
   const eventNews = [
     {
       id: 1,
       img: "/assets/news1.avif",
       title: "Track Star Shines",
-      content: "Our track athlete broke the school record, winning gold in the 100m sprint with an impressive time.",
+      content:
+        "Our track athlete broke the school record, winning gold in the 100m sprint with an impressive time.",
       date: "2 days ago",
     },
     {
@@ -98,7 +104,7 @@ export default function News() {
         "Our basketball team has advanced to the regional finals after an impressive season of teamwork and determination.",
       date: "3 weeks ago",
     },
-  ]
+  ];
 
   const studentNews = [
     {
@@ -125,7 +131,7 @@ export default function News() {
         "Student artists showcased their talents at the annual art exhibition, impressing visitors with their creativity and technical skills.",
       date: "2 weeks ago",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen">
@@ -146,8 +152,12 @@ export default function News() {
         >
           <div className="absolute inset-0 bg-black/50"></div>
           <div className="absolute bottom-2 md:bottom-5 lg:bottom-10 left-5 sm:left-8 md:left-10 lg:left-20 text-white z-10">
-            <span className="text-xl md:text-3xl font-semibold block">KBHS TEAM MAKES IT TO THE FINALS</span>
-            <span className="block text-sm sm:text-base">KBHS students showcase an outstanding performance</span>
+            <span className="text-xl md:text-3xl font-semibold block">
+              KBHS TEAM MAKES IT TO THE FINALS
+            </span>
+            <span className="block text-sm sm:text-base">
+              KBHS students showcase an outstanding performance
+            </span>
           </div>
         </div>
 
@@ -160,7 +170,13 @@ export default function News() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             {latestNews.map((card) => (
-              <NewsCard key={card.id} img={card.img} title={card.title} content={card.content} date={card.date} />
+              <NewsCard
+                key={card.id}
+                img={card.img}
+                title={card.title}
+                content={card.content}
+                date={card.date}
+              />
             ))}
           </div>
         </div>
@@ -174,7 +190,13 @@ export default function News() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             {eventNews.map((card) => (
-              <NewsCard key={card.id} img={card.img} title={card.title} content={card.content} date={card.date} />
+              <NewsCard
+                key={card.id}
+                img={card.img}
+                title={card.title}
+                content={card.content}
+                date={card.date}
+              />
             ))}
           </div>
         </div>
@@ -188,11 +210,17 @@ export default function News() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             {studentNews.map((card) => (
-              <NewsCard key={card.id} img={card.img} title={card.title} content={card.content} date={card.date} />
+              <NewsCard
+                key={card.id}
+                img={card.img}
+                title={card.title}
+                content={card.content}
+                date={card.date}
+              />
             ))}
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
