@@ -37,6 +37,12 @@ const AlumniEvents = () => {
   )
 }
 
+
+const alumnis = [
+  { name: "Peter S. Okumu", position: "Class of 2014", image: "/assets/alumni/petersokumu.jpg" },
+  { name: "Nyongesa Joseph", position: "Class of 2016", image: "/assets/alumni/nyongesajoseph.jpg" },
+]
+
 // Create a simple Cards component
 const Cards = () => {
   return (
@@ -44,16 +50,16 @@ const Cards = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Notable Alumni</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((item) => (
-            <Card key={item} className="overflow-hidden">
-              <div className="relative h-64 w-full">
-                <Image src="/assets/alumni1.jpg" alt="Alumni" fill className="object-cover" />
+          {alumnis.map((item, index) => (
+            <Card key={index} className="overflow-hidden">
+              <div className="relative aspect-square w-full">
+                <Image src={item.image} alt="Alumni" fill className="object-cover" />
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Dr. James Mwangi</h3>
-                <p className="text-gray-600 mb-2">Class of 2005</p>
+                <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
+                <p className="text-gray-600 mb-2">{item.position}</p>
                 <p className="text-gray-700">
-                  Leading researcher in renewable energy technologies and recipient of the National Science Award.
+                  ...
                 </p>
               </CardContent>
             </Card>
