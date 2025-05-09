@@ -232,7 +232,7 @@ export default function Contact() {
         </div>
 
         {/* Map */}
-        <div className="mt-12 max-w-6xl mx-auto">
+        <div className="mt-12 mx-auto">
           <Card className="shadow-md overflow-hidden">
             <CardContent className="p-0">
               <div className="h-[400px] w-full">
