@@ -119,7 +119,7 @@ export default function Contact() {
                   <Phone className="h-5 w-5 text-[#295E4F] mt-1" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+254 782 137 201</p>
+                    <p className="text-muted-foreground">+254 721 798 792</p>
                   </div>
                 </div>
 
